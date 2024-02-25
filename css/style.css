@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #9400d3;
+}
+
+section.wrapper {
+  margin: 5rem auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+}
+
+section.wrapper header h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-block: .5rem;
+}
+
+section.wrapper header p {
+  margin-block-end: .5rem;
+}
+
+section.wrapper main {
+  width: 100%;
+  padding-block: 1.8rem;
+}
+
+section.wrapper main form {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+main form section.previewer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: 200px;
+  border-radius: .35rem;
+  border: dashed 2px #5b137a;
+  overflow: auto;
+}
+
+main form input[type='url'] {
+  padding-block: .65rem;
+  padding-inline: 10px;
+  font-size: 17px;
+  outline: none;
+  border-radius: .35rem;
+  border: 1px solid #a1a0a0;
+  font-family: cursive, sans-serif;
+}
+
+main form button {
+  padding-block: .65rem;
+  padding-inline: 1rem;
+  outline: none;
+  border-radius: .35rem;
+  border: 1px solid #084989;
+  color: #fff;
+  background-color: #1e90ff;
+  font-size: 16.5px;
+  opacity: .9;
+  pointer-events: none;
+}
+
+main form input:valid ~ button {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
